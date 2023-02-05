@@ -6,7 +6,7 @@ class Solution:
     def longestPalindrome(self, s: str) -> str:
         n = len(s)
         ans_str = s[0]
-        dp = [[True for _ in range(n+1)] for _ in range(n)]
+        dp = [[False for _ in range(n+1)] for _ in range(n)]
         for i in range(n):
             dp[i][0] = True
             dp[i][1] = True
